@@ -61,7 +61,7 @@ In how many ways can this happen? There are 36 possible outcomes ($36 = 6\times 
 So:
 
 $$
-p(A|I) = \frac{2}{36} = \frac{1}{16}.
+p(A|I) = \frac{2}{36} = \frac{1}{18}.
 $$
 
 Let's do one more.
