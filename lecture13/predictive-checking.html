@@ -28,11 +28,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -42,7 +42,7 @@
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
@@ -557,24 +557,24 @@ However, you cannot accept a model that performs very well.
 There are other methods for doing this which are more advanced.
 Predictive checking is good for identifying bugs in your code or coming up with ideas to extend the models in a way that better matches the data.</p>
 <div class="cell tag_hide-input tag_hide-output docutils container">
-<details class="admonition hide above-input">
+<details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAKE_BOOK_FIGURES</span><span class="o">=</span><span class="kc">False</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib_inline</span>
+<span class="kn">import</span> <span class="nn">matplotlib_inline</span>
 <span class="n">matplotlib_inline</span><span class="o">.</span><span class="n">backend_inline</span><span class="o">.</span><span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;paper&quot;</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">set_book_style</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">set_book_style</span><span class="p">():</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-white&#39;</span><span class="p">)</span> 
     <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="s2">&quot;deep&quot;</span><span class="p">)</span>
@@ -615,7 +615,7 @@ Predictive checking is good for identifying bugs in your code or coming up with 
         <span class="s1">&#39;savefig.pad_inches&#39;</span><span class="p">:</span> <span class="mf">0.1</span>   <span class="c1"># Small padding to ensure nothing gets cut off</span>
     <span class="p">})</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">save_for_book</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">is_vector</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">save_for_book</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">is_vector</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Save a figure with book-optimized settings.</span>
 <span class="sd">    </span>
@@ -642,10 +642,10 @@ Predictive checking is good for identifying bugs in your code or coming up with 
     <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">filename</span><span class="si">}{</span><span class="n">ext</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
 
-<span class="k">def</span><span class="w"> </span><span class="nf">make_full_width_fig</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">make_full_width_fig</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">2.9</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">make_half_width_fig</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">make_half_width_fig</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">2.35</span><span class="p">,</span> <span class="mf">1.45</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">MAKE_BOOK_FIGURES</span><span class="p">:</span>
@@ -653,8 +653,8 @@ Predictive checking is good for identifying bugs in your code or coming up with 
 <span class="n">make_full_width_fig</span> <span class="o">=</span> <span class="n">make_full_width_fig</span> <span class="k">if</span> <span class="n">MAKE_BOOK_FIGURES</span> <span class="k">else</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 <span class="n">make_half_width_fig</span> <span class="o">=</span> <span class="n">make_half_width_fig</span> <span class="k">if</span> <span class="n">MAKE_BOOK_FIGURES</span> <span class="k">else</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
 </pre></div>
 </div>
 </div>
@@ -727,10 +727,10 @@ Generate the ground truth data from a fair coin:</p>
 </pre></div>
 </div>
 </div>
-<details class="admonition hide below-input">
+<details class="hide below-input">
 <summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell output</p>
-<p class="expanded admonition-title">Hide code cell output</p>
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1., 1., 0., 0., 0., 1., 1., 1., 1., 1., 0., 0., 0., 0., 0., 0.,
@@ -784,8 +784,7 @@ Generate the ground truth data from a fair coin:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e45ad105ff73cd9848fcb1bf721a06858292c242e3f76a9b9ecbc673bb172fe3.svg" src="../_images/e45ad105ff73cd9848fcb1bf721a06858292c242e3f76a9b9ecbc673bb172fe3.svg" />
-</div>
+<img alt="../_images/e45ad105ff73cd9848fcb1bf721a06858292c242e3f76a9b9ecbc673bb172fe3.svg" src="../_images/e45ad105ff73cd9848fcb1bf721a06858292c242e3f76a9b9ecbc673bb172fe3.svg" /></div>
 </div>
 <p>This visual inspection does not reveal anything strange.
 Let’s now repeat this excersize with a dataset that is <em>completely artificial</em> and does not match the model.
@@ -825,10 +824,10 @@ Let’s see.</p>
 </pre></div>
 </div>
 </div>
-<details class="admonition hide below-input">
+<details class="hide below-input">
 <summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell output</p>
-<p class="expanded admonition-title">Hide code cell output</p>
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 0.,
@@ -882,8 +881,7 @@ Let’s see.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2488c3c71d5ca74da110b28ded2df8571190882100b6847a85e21cd34788b413.svg" src="../_images/2488c3c71d5ca74da110b28ded2df8571190882100b6847a85e21cd34788b413.svg" />
-</div>
+<img alt="../_images/2488c3c71d5ca74da110b28ded2df8571190882100b6847a85e21cd34788b413.svg" src="../_images/2488c3c71d5ca74da110b28ded2df8571190882100b6847a85e21cd34788b413.svg" /></div>
 </div>
 <p>Does the first row (original data) look similar to the rest of the rows (replicated experiments).
 Well, if you pay close attention you will notice that the data I picked by hand has more transitions from heads to tails than the replicated data.
@@ -912,7 +910,7 @@ T_{h}(x_{1:n}) = \sum_{i=1}^nx_i.
 <p>Let’s implement this as a Python function of the data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">T_h</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">T_h</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;This is an implementation of a </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -954,15 +952,14 @@ For the first dataset (the one generated by the model) we get:</p>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The observed test quantity is 23
 </pre></div>
 </div>
-<img alt="../_images/5493cc3dc99d87dfdd088f738c2138775b95ce63df9f38a2419a54e503ddc3d0.svg" src="../_images/5493cc3dc99d87dfdd088f738c2138775b95ce63df9f38a2419a54e503ddc3d0.svg" />
-</div>
+<img alt="../_images/5493cc3dc99d87dfdd088f738c2138775b95ce63df9f38a2419a54e503ddc3d0.svg" src="../_images/5493cc3dc99d87dfdd088f738c2138775b95ce63df9f38a2419a54e503ddc3d0.svg" /></div>
 </div>
 <p>Now, let’s look also at the other dataset (the one I picked by hand):</p>
 <div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
+<details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The observed test quantity</span>
@@ -990,8 +987,7 @@ For the first dataset (the one generated by the model) we get:</p>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The observed test quantity is 25
 </pre></div>
 </div>
-<img alt="../_images/496ce9ea433c720311e0215f6088dea629f825d78702cbbc50450d6b2d51847a.svg" src="../_images/496ce9ea433c720311e0215f6088dea629f825d78702cbbc50450d6b2d51847a.svg" />
-</div>
+<img alt="../_images/496ce9ea433c720311e0215f6088dea629f825d78702cbbc50450d6b2d51847a.svg" src="../_images/496ce9ea433c720311e0215f6088dea629f825d78702cbbc50450d6b2d51847a.svg" /></div>
 </div>
 <p>It looks about the same.
 This just means that I was able to replicate this particular test quantity when I picked values by hand.
@@ -1010,7 +1006,7 @@ T_s(x) = \text{# number of switches from 0 and 1 in the sequence}\;x.
 <p>This is not easy to write in an analytical form, but we can program it:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">T_s</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">T_s</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
         <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
@@ -1048,8 +1044,7 @@ T_s(x) = \text{# number of switches from 0 and 1 in the sequence}\;x.
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The observed test quantity is 21
 </pre></div>
 </div>
-<img alt="../_images/0c262c01d6e551501cadcd6909f830da96ed06ced28277105d98a24afe0c9025.svg" src="../_images/0c262c01d6e551501cadcd6909f830da96ed06ced28277105d98a24afe0c9025.svg" />
-</div>
+<img alt="../_images/0c262c01d6e551501cadcd6909f830da96ed06ced28277105d98a24afe0c9025.svg" src="../_images/0c262c01d6e551501cadcd6909f830da96ed06ced28277105d98a24afe0c9025.svg" /></div>
 </div>
 <p>This looks okay.</p>
 <p>Let’s now look at the one I picked by hand:</p>
@@ -1079,8 +1074,7 @@ T_s(x) = \text{# number of switches from 0 and 1 in the sequence}\;x.
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The observed test quantity is 32
 </pre></div>
 </div>
-<img alt="../_images/31b0e2e63c05c5991f403049cf29d18ca72567fd973a5ff23740864f7109726c.svg" src="../_images/31b0e2e63c05c5991f403049cf29d18ca72567fd973a5ff23740864f7109726c.svg" />
-</div>
+<img alt="../_images/31b0e2e63c05c5991f403049cf29d18ca72567fd973a5ff23740864f7109726c.svg" src="../_images/31b0e2e63c05c5991f403049cf29d18ca72567fd973a5ff23740864f7109726c.svg" /></div>
 </div>
 <p>Oops… The data are highly unlikely under the assumptions of this model.
 You see how predictive checking can help you reveal that there is something fishy with your data.</p>

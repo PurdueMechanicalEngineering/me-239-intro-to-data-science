@@ -28,11 +28,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -42,7 +42,7 @@
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
@@ -495,7 +495,7 @@ p(B_1 + \dots + B_n|I) = 1.
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-p(B_i|B_jI) = \delta_{ij} = \begin{cases}1,&amp;\;\text{if}\;i=j,\\ 0,&amp;\;\text{otherwise}.\end{cases}
+p(B_iB_j|I) = \delta_{ij} = \begin{cases}1,&amp;\;\text{if}\;i=j,\\ 0,&amp;\;\text{otherwise}.\end{cases}
 \end{split}\]</div>
 <p>Then, for any logical sentence <span class="math notranslate nohighlight">\(A\)</span> we have:</p>
 <div class="math notranslate nohighlight">
@@ -506,8 +506,7 @@ p(A|I) = \sum_{i=1}^n p(AB_i|I) = \sum_{i=1}^n p(A|B_i,I)p(B_i|I).
 You take any logical sentence A and set of exclusive but exhaustive possibilities <span class="math notranslate nohighlight">\(B_1,\dots,B_n\)</span> and you break down the probability of <span class="math notranslate nohighlight">\(A\)</span> in terms of the probabilities of the <span class="math notranslate nohighlight">\(B_i\)</span>’s.
 The Venn diagrams in <a class="reference internal" href="#venn-sum-rule"><span class="std std-numref">Fig. 6</span></a> can help you understand what is going on.</p>
 <figure class="align-default" id="venn-sum-rule">
-<a class="reference internal image-reference" href="../_images/venn_sum_rule.png"><img alt="../_images/venn_sum_rule.png" src="../_images/venn_sum_rule.png" style="height: 250px;" />
-</a>
+<a class="reference internal image-reference" href="../_images/venn_sum_rule.png"><img alt="../_images/venn_sum_rule.png" src="../_images/venn_sum_rule.png" style="height: 250px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 6 </span><span class="caption-text">Visualization of the sum rule of probability.</span><a class="headerlink" href="#venn-sum-rule" title="Link to this image">#</a></p>
 </figcaption>

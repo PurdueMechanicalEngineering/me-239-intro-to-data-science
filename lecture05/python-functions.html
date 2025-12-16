@@ -28,11 +28,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -42,7 +42,7 @@
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
@@ -554,7 +554,7 @@ Functions are extremely important in data science.
 The models we build are essentially functions with parameters that are tuned to the data.
 So, we have to understand how functions work.</p>
 <p>The syntax for defining a function in Python is as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">function_name</span><span class="p">(</span><span class="n">some_inputs</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">some_inputs</span><span class="p">):</span>
     <span class="n">some</span> <span class="n">expressions</span>
     <span class="k">return</span> <span class="n">something</span> <span class="p">(</span><span class="n">optional</span><span class="p">)</span>
 </pre></div>
@@ -566,7 +566,7 @@ So, we have to understand how functions work.</p>
 <p>Let’s start first with functions that have no inputs and return nothing.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">print_hello</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_hello</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Prints hello.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -675,7 +675,7 @@ Using only lower case letters and underscores makes it easier to remember the fu
 Here you go:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">print_hello_to</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_hello_to</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Prints hello using the name provided.</span>
 <span class="sd">    </span>
@@ -741,7 +741,7 @@ print_hello_to(name)
 Let’s write a function with two inputs:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">print_hello_to_two</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span> <span class="n">name2</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_hello_to_two</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span> <span class="n">name2</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Prints hello using the names provided.</span>
 <span class="sd">    </span>
@@ -790,7 +790,7 @@ These functions typically take a single input that is a real number and they ret
 Here are some examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Calculates the square of ``x``.</span>
 <span class="sd">    </span>
@@ -906,7 +906,7 @@ Let’s give square a string to see what happens:</p>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">square</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">)</span>
 
 <span class="nn">Cell In[16], line 10,</span> in <span class="ni">square</span><span class="nt">(x)</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span><span class="sd">     Calculates the square of ``x``.</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span><span class="sd">     </span>
@@ -952,31 +952,31 @@ Be careful with the inputs you pass to your functions.</p>
 It is very annoying to have to provide a value for each input.
 If some of the inputs are used very often, you can provide a default value.
 The syntax for achieving this is as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">function_name</span><span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="o">=</span><span class="n">default_value</span><span class="p">,</span> <span class="n">input3</span><span class="o">=</span><span class="n">default_value</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="o">=</span><span class="n">default_value</span><span class="p">,</span> <span class="n">input3</span><span class="o">=</span><span class="n">default_value</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
     <span class="o">...</span>
 </pre></div>
 </div>
 <p>Let’s demonstrate this by making a function that makes a plot of a numerical function on a given range.</p>
 <p>First, load some libraries we are going to need:</p>
 <div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
+<details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAKE_BOOK_FIGURES</span><span class="o">=</span><span class="kc">False</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib_inline</span>
+<span class="kn">import</span> <span class="nn">matplotlib_inline</span>
 <span class="n">matplotlib_inline</span><span class="o">.</span><span class="n">backend_inline</span><span class="o">.</span><span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;paper&quot;</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">set_book_style</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">set_book_style</span><span class="p">():</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-white&#39;</span><span class="p">)</span> 
     <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="s2">&quot;deep&quot;</span><span class="p">)</span>
@@ -1017,7 +1017,7 @@ The syntax for achieving this is as follows:</p>
         <span class="s1">&#39;savefig.pad_inches&#39;</span><span class="p">:</span> <span class="mf">0.1</span>   <span class="c1"># Small padding to ensure nothing gets cut off</span>
     <span class="p">})</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">save_for_book</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">is_vector</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">save_for_book</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">is_vector</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Save a figure with book-optimized settings.</span>
 <span class="sd">    </span>
@@ -1044,10 +1044,10 @@ The syntax for achieving this is as follows:</p>
     <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">filename</span><span class="si">}{</span><span class="n">ext</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
 
-<span class="k">def</span><span class="w"> </span><span class="nf">make_full_width_fig</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">make_full_width_fig</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">2.9</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">make_half_width_fig</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">make_half_width_fig</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">2.35</span><span class="p">,</span> <span class="mf">1.45</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">MAKE_BOOK_FIGURES</span><span class="p">:</span>
@@ -1062,9 +1062,9 @@ The syntax for achieving this is as follows:</p>
 <p>And here is the function definition:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">plot_func</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">plot_func</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Plot function f over the range of values [left, right] using color.</span>
 <span class="sd">    </span>
@@ -1102,8 +1102,7 @@ Let’s see how it works:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4f105b7ee2666db5d873706591a953bb6d63a2d2415fb9783e6c88032079b4c3.svg" src="../_images/4f105b7ee2666db5d873706591a953bb6d63a2d2415fb9783e6c88032079b4c3.svg" />
-</div>
+<img alt="../_images/4f105b7ee2666db5d873706591a953bb6d63a2d2415fb9783e6c88032079b4c3.svg" src="../_images/4f105b7ee2666db5d873706591a953bb6d63a2d2415fb9783e6c88032079b4c3.svg" /></div>
 </div>
 <p>Let’s call it with another function as well:</p>
 <div class="cell docutils container">
@@ -1116,8 +1115,7 @@ Let’s see how it works:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/230ae9eb78b73722345c6be2d6ab7fcab30122c2e11aa8bd2d33c9f1733f9e37.svg" src="../_images/230ae9eb78b73722345c6be2d6ab7fcab30122c2e11aa8bd2d33c9f1733f9e37.svg" />
-</div>
+<img alt="../_images/230ae9eb78b73722345c6be2d6ab7fcab30122c2e11aa8bd2d33c9f1733f9e37.svg" src="../_images/230ae9eb78b73722345c6be2d6ab7fcab30122c2e11aa8bd2d33c9f1733f9e37.svg" /></div>
 </div>
 <p>Notice the default plotting range was used <code class="docutils literal notranslate"><span class="pre">[left,</span> <span class="pre">right]</span> <span class="pre">=</span> <span class="pre">[0,</span> <span class="pre">1]</span></code> and the color was also the default one (red).
 Let’s change the left side of the interval to -1 and the color to blue:</p>
@@ -1129,8 +1127,7 @@ Let’s change the left side of the interval to -1 and the color to blue:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/5629a59ae28d6b2e4f3123a7aa48b16033d30354a1dd9774c4aae9b104d94ecf.svg" src="../_images/5629a59ae28d6b2e4f3123a7aa48b16033d30354a1dd9774c4aae9b104d94ecf.svg" />
-</div>
+<img alt="../_images/5629a59ae28d6b2e4f3123a7aa48b16033d30354a1dd9774c4aae9b104d94ecf.svg" src="../_images/5629a59ae28d6b2e4f3123a7aa48b16033d30354a1dd9774c4aae9b104d94ecf.svg" /></div>
 </div>
 <p>Notice that the order of the keyword arguments does not matter.
 The following produces the same result:</p>
@@ -1141,8 +1138,7 @@ The following produces the same result:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/63cb0013adb67d66cec7d173fb5cd60a7a4b7d8aac72eaa1a14a1293bb4cc6a2.svg" src="../_images/63cb0013adb67d66cec7d173fb5cd60a7a4b7d8aac72eaa1a14a1293bb4cc6a2.svg" />
-</div>
+<img alt="../_images/63cb0013adb67d66cec7d173fb5cd60a7a4b7d8aac72eaa1a14a1293bb4cc6a2.svg" src="../_images/63cb0013adb67d66cec7d173fb5cd60a7a4b7d8aac72eaa1a14a1293bb4cc6a2.svg" /></div>
 </div>
 <p>But you cannot provide a keyword argument before an regular one.
 The following results in an error:</p>

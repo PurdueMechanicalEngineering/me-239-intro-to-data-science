@@ -16,7 +16,7 @@ $$
 + They are mutually exclusive:
 
 $$
-p(B_i|B_jI) = \delta_{ij} = \begin{cases}1,&\;\text{if}\;i=j,\\ 0,&\;\text{otherwise}.\end{cases}
+p(B_iB_j|I) = \delta_{ij} = \begin{cases}1,&\;\text{if}\;i=j,\\ 0,&\;\text{otherwise}.\end{cases}
 $$
 
 Then, for any logical sentence $A$ we have:
