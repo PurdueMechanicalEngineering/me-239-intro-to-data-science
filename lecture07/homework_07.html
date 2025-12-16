@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -610,13 +610,13 @@ The deck includes: Four versions aces (A); Four versions of each number from 2 t
 In blackjack all the cards are associated with a number.
 The cards that have a number on them are associated with that number.
 The figures J, Q, and K are associated with the number 10.
-The aces A can either be the number 1 or the number 11.
+The aces A are associated with the number 11.
 The deck of cards is shuffled <a class="reference external" href="https://youtu.be/AxJubaijQbI">adequately</a>.</p>
 </div></blockquote>
 <p>Now consider the logical proposition <span class="math notranslate nohighlight">\(A\)</span> (blackjack):</p>
 <blockquote>
 <div><p>You draw two cards at random from the deck without replacement.
-You either have two aces (AA) or the maximum sum of the numbers associated with the cards is 21.
+The sum of the numbers associated with the cards is 21.
 For example: (10, A), (J, A), etc.</p>
 </div></blockquote>
 <section id="a-finding-the-probability-of-a-using-the-principle-of-inssuficient-reason">
@@ -2106,7 +2106,7 @@ We run it 10 times. Notice that everytime you get a slighlty different estimate.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A place to store the estimates</span>
 <span class="n">p_major_eqs</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="c1"># Put 1000 estimates in there</span>
+<span class="c1"># Put 200 estimates in there</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">200</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="n">p_major_eq</span> <span class="o">=</span> <span class="c1"># your code here</span>

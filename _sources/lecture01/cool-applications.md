@@ -3,7 +3,7 @@
 What follows is an incomplete list of cool things that one can do combining
 mechanical engineering with data science. Note that these applications are
 rather advanced. We will not learn how to carry them out in this class. You
-will, however, learn the fundamentals upon which the data science components of
+will; however, learn the fundamentals upon which the data science components of
 these applications are based.
 
 (space-x-falcon-landing)=
